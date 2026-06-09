@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer | Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="progress-bar"></div>
+
+    <!-- ════════════ NAVBAR ════════════ -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span>&lt;</span>dev<span>/&gt;</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item ms-lg-2"><a class="nav-link nav-cta" href="#contact">Hire Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ════════════ HERO ════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="available-badge">
+                        <div class="pulse-dot"></div>
+                        Available for opportunities
+                    </div>
+                    <h1 class="hero-name">
+                        Building<br /><span class="accent-word">Pixel-Perfect</span><br />Interfaces
+                    </h1>
+                    <p class="hero-desc">
+                        4.4+ years crafting high-performance, responsive web apps for Fintech, Mining, and Enterprise
+                        domains. From Axis Bank eKYC portals to data-intensive mining dashboards — I build UIs that
+                        perform and delight.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-num">4.4<span>+</span></div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">3<span>+</span></div>
+                            <div class="stat-label">Domains Served</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">6<span>+</span></div>
+                            <div class="stat-label">Projects Shipped</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary-custom">
+                            <i class="bi bi-grid-3x3-gap"></i> View Projects
+                        </a>
+                        <a href="SushmaGunnalapuri_Resume.pdf" download class="btn-ghost">
+                            <i class="bi bi-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 hero-visual">
+                    <div class="code-card fade-up">
+                        <div class="code-card-header">
+                            <div class="dot dot-r"></div>
+                            <div class="dot dot-y"></div>
+                            <div class="dot dot-g"></div>
+                            <span class="code-filename">developer.ts</span>
+                        </div>
+                        <div class="code-line"><span class="kw">const</span> <span class="fn">developer</span> = {</div>
+                        <div class="code-line indent1"><span class="prop">name</span>: <span class="str">"Frontend
+                                Developer"</span>,</div>
+                        <div class="code-line indent1"><span class="prop">experience</span>: <span
+                                class="num">4.4</span>,</div>
+                        <div class="code-line indent1"><span class="prop">location</span>: <span class="str">"Hyderabad,
+                                IN"</span>,</div>
+                        <div class="code-line indent1"><span class="prop">stack</span>: [</div>
+                        <div class="code-line indent2"><span class="str">"React.js"</span>, <span
+                                class="str">"TypeScript"</span>,</div>
+                        <div class="code-line indent2"><span class="str">"Tailwind CSS"</span>, <span
+                                class="str">"Figma"</span></div>
+                        <div class="code-line indent1">],</div>
+                        <div class="code-line indent1"><span class="prop">domains</span>: [</div>
+                        <div class="code-line indent2"><span class="str">"Fintech"</span>, <span
+                                class="str">"Mining"</span>,</div>
+                        <div class="code-line indent2"><span class="str">"Enterprise"</span></div>
+                        <div class="code-line indent1">],</div>
+                        <div class="code-line indent1"><span class="prop">available</span>: <span
+                                class="num">true</span></div>
+                        <div class="code-line">};</div>
+                        <div class="code-line" style="margin-top:0.5rem"><span class="cm">// Let's build something
+                                great</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ SKILLS ════════════ -->
+    <section class="skills-section section-pad" id="skills">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <div class="section-label">Expertise</div>
+                    <h2 class="section-heading">Technical Skills</h2>
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <div class="row g-0 border rounded-3" style="border-color: var(--border) !important;">
+                <div class="col-12 col-md-6 col-lg-3 skill-col fade-up">
+                    <div class="skill-category-label">Frontend Core</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript ES6+</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">jQuery</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 skill-col fade-up" style="transition-delay:0.1s">
+                    <div class="skill-category-label">Styling & Frameworks</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Bootstrap 5</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">WCAG Accessibility</span>
+                        <span class="skill-tag">CSS Animations</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 skill-col fade-up" style="transition-delay:0.2s">
+                    <div class="skill-category-label">Design & Prototyping</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe Photoshop</span>
+                        <span class="skill-tag">Wireframing</span>
+                        <span class="skill-tag">UI Auditing</span>
+                        <span class="skill-tag">Design Systems</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 skill-col fade-up" style="transition-delay:0.3s">
+                    <div class="skill-category-label">Tools & Practices</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & Version Control</span>
+                        <span class="skill-tag">REST API Integration</span>
+                        <span class="skill-tag">Lazy Loading</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                        <span class="skill-tag">AI Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ EXPERIENCE ════════════ -->
+    <section class="section-pad" id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="section-label">Career</div>
+                    <h2 class="section-heading">Work<br />Experience</h2>
+                    <div class="divider"></div>
+                    <p class="section-sub">4+ years across Fintech, Mining, and Enterprise building production-grade
+                        interfaces that scale.</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="timeline ps-4">
+
+                        <div class="timeline-item fade-up">
+                            <div class="timeline-dot active"></div>
+                            <div class="exp-card">
+                                <div class="exp-header">
+                                    <div>
+                                        <div class="exp-role">Frontend Developer</div>
+                                        <div class="exp-company">Groundhog Apps Pvt Ltd · Hyderabad</div>
+                                    </div>
+                                    <span class="exp-date current">June 2025 – Present</span>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Sole frontend architect of a scalable, data-intensive mining management portal
+                                        built with React.js — fully responsive across all viewports.</li>
+                                    <li>Optimized asset delivery pipeline to significantly reduce page load latency on
+                                        complex, data-heavy pages.</li>
+                                    <li>Translated raw mining statistics into intuitive, highly navigable layouts with
+                                        clear visual hierarchy.</li>
+                                    <li>Collaborated with backend engineers on REST API integration for real-time data
+                                        rendering.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item fade-up" style="transition-delay:0.1s">
+                            <div class="timeline-dot"></div>
+                            <div class="exp-card">
+                                <div class="exp-header">
+                                    <div>
+                                        <div class="exp-role">Frontend Developer</div>
+                                        <div class="exp-company">Innodigital Solutions Pvt Ltd · Hyderabad</div>
+                                    </div>
+                                    <span class="exp-date">Jul 2024 – Apr 2025</span>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Delivered pixel-perfect, responsive interfaces for Axis Bank eKYC and ABM eKYC
+                                        portals in high-traffic production environments.</li>
+                                    <li>Resolved critical UX friction points through UI audits, improving application
+                                        stability and user retention.</li>
+                                    <li>Ensured WCAG accessibility and cross-browser compatibility meeting regulatory
+                                        and usability standards.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item fade-up" style="transition-delay:0.2s">
+                            <div class="timeline-dot"></div>
+                            <div class="exp-card">
+                                <div class="exp-header">
+                                    <div>
+                                        <div class="exp-role">Frontend Developer</div>
+                                        <div class="exp-company">Raice Tech Soft Pvt Ltd</div>
+                                    </div>
+                                    <span class="exp-date">Oct 2023 – Jun 2024</span>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Designed and developed the official ARDO organisation website using React.js
+                                        with interactive UI elements and CSS animations.</li>
+                                    <li>Improved performance and cross-device usability through close collaboration with
+                                        design and backend teams.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item fade-up" style="transition-delay:0.3s">
+                            <div class="timeline-dot"></div>
+                            <div class="exp-card">
+                                <div class="exp-header">
+                                    <div>
+                                        <div class="exp-role">UI Developer</div>
+                                        <div class="exp-company">Labtron Equipment Pvt Ltd · Hyderabad</div>
+                                    </div>
+                                    <span class="exp-date">Nov 2021 – Oct 2023</span>
+                                </div>
+                                <ul class="exp-bullets">
+                                    <li>Designed and developed multiple company websites with HTML5, CSS3, JavaScript,
+                                        and Bootstrap for enhanced brand presence.</li>
+                                    <li>Conducted performance testing and user feedback sessions to drive continuous UI
+                                        improvement.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ PROJECTS ════════════ -->
+    <section class="section-pad" id="projects"
+        style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="section-label">Portfolio</div>
+                <h2 class="section-heading">Key Projects</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-sub mx-auto text-center">Production-grade interfaces shipped for real users at scale.
+                </p>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="project-card">
+                        <span class="project-domain domain-mining">Mining · SaaS</span>
+                        <div class="project-name">Mining Portal</div>
+                        <p class="project-desc">
+                            Sole frontend architect of a scalable, data-intensive mining management portal. Built for
+                            100% responsive performance with optimized asset delivery and reduced load latency across
+                            all devices.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">React.js</span>
+                            <span class="tech-pill">TypeScript</span>
+                            <span class="tech-pill">REST API</span>
+                            <span class="tech-pill">Responsive</span>
+                        </div>
+                        <a href="https://ssic-qa.groundhogapps.com" target="_blank" class="project-link">
+                            View Live <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" style="transition-delay:0.1s">
+                    <div class="project-card">
+                        <span class="project-domain domain-fintech">Fintech · Banking</span>
+                        <div class="project-name">Axis Bank eKYC Portal</div>
+                        <p class="project-desc">
+                            Fully responsive, WCAG-compliant eKYC mobile interface for Axis Bank in production. Meets
+                            financial regulatory requirements and high usability standards for end customers at scale.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">WCAG</span>
+                        </div>
+                        <a href="https://office.innodigital.in/axis-ekyc/mobile" target="_blank" class="project-link">
+                            View Live <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 fade-up" style="transition-delay:0.2s">
+                    <div class="project-card">
+                        <span class="project-domain domain-fintech">Fintech · Banking</span>
+                        <div class="project-name">ABM eKYC Portal</div>
+                        <p class="project-desc">
+                            Responsive, WCAG-compliant eKYC interface for ABM in production, built to financial
+                            regulatory standards. Focused on seamless mobile UX with cross-browser and accessibility
+                            compliance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">Bootstrap</span>
+                            <span class="tech-pill">Accessibility</span>
+                        </div>
+                        <a href="https://office.innodigital.in/abm-ekyc" target="_blank" class="project-link">
+                            View Live <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ ABOUT ════════════ -->
+    <section class="about-section section-pad" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 fade-up">
+                    <div class="section-label">About Me</div>
+                    <h2 class="section-heading">The Developer Behind the Code</h2>
+                    <div class="divider"></div>
+                    <div class="about-highlight">
+                        Passionate about transforming complex requirements into clean, pixel-perfect interfaces that are
+                        fast, accessible, and delightful to use.
+                    </div>
+                    <div class="about-highlight">
+                        I bridge the gap between design and engineering — working fluently with Figma mockups,
+                        collaborating with backend teams, and owning the full frontend delivery lifecycle.
+                    </div>
+                    <div class="about-highlight">
+                        From high-traffic Fintech portals serving real bank customers to data-intensive mining
+                        dashboards — I ship code that holds up in production.
+                    </div>
+                </div>
+                <div class="col-lg-7 fade-up" style="transition-delay:0.15s">
+                    <div class="row g-3 mb-4">
+                        <div class="col-6">
+                            <div class="edu-card">
+                                <div style="font-size:1.5rem; margin-bottom:0.75rem;"><i class="bi bi-mortarboard"></i></div>
+                                <div class="edu-degree">B.Tech – ECE</div>
+                                <div class="edu-school">University College of Engineering &amp; Technology, MGU,
+                                    Nalgonda</div>
+                                <div class="edu-year">2017 – 2021</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="edu-card h-100">
+                                <div style="font-size:1.5rem; margin-bottom:0.75rem;"><i class="bi bi-geo"></i></div>
+                                <div class="edu-degree">Based in Hyderabad</div>
+                                <div class="edu-school">Open to remote &amp; on-site opportunities across India and
+                                    beyond</div>
+                                <div class="edu-year">Available Now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="edu-card">
+                                <div style="font-size:1.5rem; margin-bottom:0.5rem;"><i class="bi bi-lightning-charge-fill"></i></div>
+                                <div class="edu-degree">Performance-First</div>
+                                <div class="edu-school">Optimized load times and asset delivery for data-heavy
+                                    production environments</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="edu-card">
+                                <div style="font-size:1.5rem; margin-bottom:0.5rem;"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                                <div class="edu-degree">Accessibility Driven</div>
+                                <div class="edu-school">WCAG-compliant interfaces meeting both regulatory and usability
+                                    standards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ CONTACT ════════════ -->
+    <section class="section-pad" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-card fade-up">
+                        <div class="section-label text-center d-block mb-2">Let's Connect</div>
+                        <h2 class="section-heading text-center">Open to New Opportunities</h2>
+                        <p
+                            style="color: var(--text-secondary); font-size: 0.95rem; line-height:1.75; max-width:480px; margin: 1rem auto 0;">
+                            Whether you have a product to build, a team to join, or just want to talk frontend — my
+                            inbox is open.
+                        </p>
+                        <div class="contact-row">
+                            <div class="contact-item">
+                                <a href="mailto:sushmaguna1608@gmail.com" title="Email">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                                <span>Email</span>
+                            </div>
+                            <div class="contact-item">
+                                <a href="www.linkedin.com/in/g-sushma-b5507322a" target="_blank" title="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <span>LinkedIn</span>
+                            </div>
+                            <div class="contact-item">
+                                <a href="https://github.com" target="_blank" title="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="contact-item">
+                                <a href="tel:+917989024619" title="Phone">
+                                    <i class="bi bi-telephone"></i>
+                                </a>
+                                <span>Phone</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 2.5rem;">
+                            <a href="mailto:sushmaguna1608@gmail.com" class="btn-primary-custom"
+                                style="margin: 0 auto; display: inline-flex;">
+                                <i class="bi bi-send"></i> Send a Message
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ FOOTER ════════════ -->
+    <footer>
+        <div class="container">
+            <p>Built with <span>♥</span> using HTML · CSS · Bootstrap · JS &nbsp;·&nbsp; Designed &amp; Developed by
+                <span>Frontend Developer</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // ── Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const total = document.body.scrollHeight - window.innerHeight;
+            const pct = (window.scrollY / total) * 100;
+            document.getElementById('progress-bar').style.width = pct + '%';
+        });
+
+        // ── Intersection Observer for fade-up
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));    
+
+        // ── Active nav on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let cur = '';
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+            });
+            navLinks.forEach(l => {
+                l.style.color = l.getAttribute('href') === `#${cur}` ? 'var(--accent-light)' : '';
+            });
+        });
+    </script>
+</body>
+
+</html>
